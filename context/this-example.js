@@ -7,4 +7,6 @@ window.name = "Resig";
 //var user = User("John", name); 
 var user = new User("John", name);
 
-console.log(name);
+// with new name is "Resig"
+// without new name is "John Resig"
+console.log(name); 

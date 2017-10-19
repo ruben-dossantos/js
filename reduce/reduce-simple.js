@@ -7,4 +7,4 @@ var orders = [
 
 var totalAmount = orders.reduce((sum, order) => sum + order.amount, 0)
 
-console.log(totalAmount)
+console.log(totalAmount) // res: 1075

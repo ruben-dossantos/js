@@ -4,4 +4,4 @@ function addNum(myNum) {
 	return num + myNum;
 }
 
-console.log(addNum(5));
+console.log(addNum(5)); // res: 15

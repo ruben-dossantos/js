@@ -15,3 +15,10 @@ var isDog = function(animal){
 var dogs = animals.filter(isDog)
 
 console.log(dogs)
+/* res: 
+	[ 
+		{ name: 'Caro', species: 'dog' },
+  		{ name: 'Hamilton', species: 'dog' },
+  		{ name: 'Vinny', species: 'dog' } 
+  	]
+*/

@@ -1,4 +1,5 @@
-import _ from 'lodash'
+const lod = require('lodash')
+//import _ from 'lodash'
 
 let dragons = [
 	{ name: 'fluffy', element: 'lightning' },
@@ -8,9 +9,15 @@ let dragons = [
 ]
 
 let hasElement =
-	_.curry((element, obj) => obj.element === element )
+	lod.curry((element, obj) => obj.element === element )
 
 let lightningDragons = 
 	dragons.filter(hasElement('lightning'))
 
 console.log(lightningDragons) 
+/* res: 
+	[ 
+		{ name: 'fluffy', element: 'lightning' }, 
+		{ name: 'noomi', element: 'lightning' } 
+	]
+*/

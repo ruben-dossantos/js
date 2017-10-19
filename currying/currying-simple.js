@@ -16,3 +16,4 @@ let dragon =
 				element + '!'
 
 console.log(dragon('fluffy')('tiny')('lightning'))
+// res: fluffy is a tiny dragon that breathes lightning!

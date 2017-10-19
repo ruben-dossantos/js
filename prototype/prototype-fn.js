@@ -5,7 +5,7 @@ Ninja.prototype.swingSword = function(){
 }; 
  
 var ninjaA = Ninja(); 
-console.log(ninjaA);
+console.log(ninjaA); // res: undefined
  
 var ninjaB = new Ninja(); 
-console.log(ninjaB.swingSword());
+console.log(ninjaB.swingSword()); // res: true

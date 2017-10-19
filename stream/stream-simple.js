@@ -10,4 +10,4 @@ highland(fs.createReadStream('customers.csv', 'utf8'))
 	})) // transform into object
 	.filter(customer => customer.numPurchases > 2) //hide bad customers
 	.map(customer => customer.name) //show only the name
-	.each( x => console.log('each: ', x))
+	.each( x => console.log('each: ', x)) // res: each:  Fluffykins        each:  King Mukla

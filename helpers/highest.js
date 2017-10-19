@@ -8,5 +8,5 @@ function makeArray(array){
   return Array().slice.call( array ); 
 } 
  
-console.log(highest(1, 1, 2, 3));
-console.log(highest(3, 1, 2, 3, 4, 5));
+console.log(highest(1, 1, 2, 3)); // res: [ 3, 2, 1, 1 ]
+console.log(highest(3, 1, 2, 3, 4, 5)); // res: [ 5, 4, 3, 3, 2, 1 ]
