@@ -7,18 +7,20 @@ var animals = [
 	{ name: 'Jimmy', species: 'fish' },
 	{ name: 'Vinny', species: 'dog' }
 ]
-
+/*
 var isDog = function(animal){
 	return animal.species === 'dog'
 }
+*/
+let isDog = animal => animal.species === 'dog'
 
 var dogs = animals.filter(isDog)
 
 console.log(dogs)
-/* res: 
-	[ 
+/* res:
+	[
 		{ name: 'Caro', species: 'dog' },
   		{ name: 'Hamilton', species: 'dog' },
-  		{ name: 'Vinny', species: 'dog' } 
+  		{ name: 'Vinny', species: 'dog' }
   	]
 */

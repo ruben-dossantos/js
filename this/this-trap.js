@@ -1,4 +1,4 @@
-'use strict'
+//'use strict'
 
 let fullname = 'John Doe'
 
@@ -12,8 +12,9 @@ let obj = {
   }
 }
 
-console.log(obj.prop.getFullName())
+console.log(obj.prop.getFullName()) //Aurelio de Rosa
 
 let test = obj.prop.getFullName
+console.log(test()) // undefined if use-strict is omitted
 let testX = test.bind(obj.prop)
-console.log(testX())
+console.log(testX()) //Aurelio de Rosa cause of bind

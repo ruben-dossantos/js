@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^21.2.1"
+    "axios": "^0.17.1",
+    "jest": "^21.2.1",
+    "node-fetch": "^1.7.3"
   }
 }

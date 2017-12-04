@@ -3,6 +3,10 @@ class Mammal {
     this.sound = sound
   }
 
+  setSound(sound){
+    this.sound = sound
+  }
+
   talk() {
     return this.sound
   }
@@ -13,6 +17,14 @@ class Dog extends Mammal {
     super('wooffeliwofffffff')
   }
 }
+
+let mam = new Mammal("oink oink")
+console.log(mam.talk())
+mam.setSound("inhek inhek")
+console.log(mam.talk())
+mam.sound = "OLA"
+console.log(mam.talk())
+
 
 let fluffykins = new Dog()
 console.log(fluffykins.sound) // res: wooffeliwofffffff

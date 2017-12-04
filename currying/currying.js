@@ -8,16 +8,14 @@ let dragons = [
 	{ name: 'doomer', element: 'timewarp' }
 ]
 
-let hasElement =
-	lod.curry((element, obj) => obj.element === element )
+let hasElement = lod.curry((element, obj) => obj.element === element )
 
-let lightningDragons = 
-	dragons.filter(hasElement('lightning'))
+let lightningDragons = dragons.filter(hasElement('lightning'))
 
-console.log(lightningDragons) 
-/* res: 
-	[ 
-		{ name: 'fluffy', element: 'lightning' }, 
-		{ name: 'noomi', element: 'lightning' } 
+console.log(lightningDragons)
+/* res:
+	[
+		{ name: 'fluffy', element: 'lightning' },
+		{ name: 'noomi', element: 'lightning' }
 	]
 */
